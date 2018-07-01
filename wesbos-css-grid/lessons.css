@@ -16,19 +16,18 @@ h1 {
   grid-template-columns: 200px 500px auto 50px;
   grid-gap: 20px;
 }
-
 .lesson3 .container3-2 {
   display: grid;
   grid-template-columns: repeat(2, 100px 50px);
   grid-gap: 20px;
 }
-
 .lesson3 .container {
   display: grid;
   grid-template-columns: 200px 500px;
   grid-template-rows: 200px 100px 400px;
   grid-gap: 20px;
 }
+
 .lesson5 .container {
   display: grid;
   grid-gap: 20px;
@@ -44,4 +43,206 @@ h1 {
   grid-template-columns: 400px 200px;
   grid-auto-flow: column;
   grid-auto-columns: 200px;
+}
+
+.lesson7 .container {
+  display: grid;
+  height: 600px;
+  grid-gap: 20px;
+  border: 10px solid var(--yellow);
+  grid-template-columns: auto 1fr auto 1fr;
+}
+
+.lesson8 .container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 100px repeat(2, 1fr auto) 200px repeat(2, 5fr);
+}
+
+.lesson9 .container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
+}
+.lesson9 .item9 {
+  background: mistyrose;
+  grid-column: span 10;
+  grid-row: span 2;
+}
+
+.lesson10 .container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+.lesson10 .poop {
+  background: #BADA55;
+  grid-column: span 2;
+  grid-row: 1 / -1;
+}
+
+.lesson11 .container {
+  display: grid;
+  grid-gap: 20px;
+  /* Make the grid 10 columns wide, every other taking up twice the free space */
+  grid-template-columns: repeat(5, 1fr 2fr);
+  /* Make the grid have 10 explicit rows, 50px high each */
+  grid-template-rows: repeat(10, 50px);
+}
+/* With Item 1, start at col 3 and go until 5 */
+.lesson11 .item1 {
+  grid-column: 3 / 5;
+}
+/* With Item 2, start at col 5 and go until the end */
+.lesson11 .item2 {
+  grid-column: 5 / -1;
+}
+/* Make Item 5 double span 2 cols and rows */
+.lesson11 .item5 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+/* Make Item 8 two rows high */
+.lesson11 .item8 {
+  grid-row: span 2;
+}
+/* Make Item 15 span the entire grid width */
+.lesson11 .item15 {
+  grid-column: 1 / -1;
+}
+/* Make item 18 span 4 widths, but end 9 */
+.lesson11 .item18 {
+  grid-column: span 4 / 9;
+}
+/* Make item 20 start at row 4 and go for 3 */
+.lesson11 .item20 {
+  grid-row: 4 / span 3;
+}
+
+.lesson12 .container {
+  display: grid;
+  grid-gap: 20px;
+  border: 10px solid var(--yellow);
+  grid-template-columns: repeat(auto-fit, 150px);
+}
+.lesson12 .item4 {
+  grid-column-end: -1;
+}
+
+.lesson13 .container {
+  display: grid;
+  grid-gap: 20px;
+  border: 10px solid var(--yellow);
+  /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
+  grid-template-columns: fit-content(100px) 150px 150px 150px;
+}
+
+.lesson14 .container14-1 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 10fr 1fr;
+  grid-template-rows: 150px 150px 100px;
+  grid-template-areas:
+    "sidebar-1  content   sidebar-2"
+    "sidebar-1  content   sidebar-2"
+    "footer     footer    footer"
+}
+.lesson14 .container14-1 .footer {
+  grid-area: footer;
+}
+.lesson14 .container14-1 .item1 {
+  grid-area: sidebar-1;
+}
+.lesson14 .container14-1 .item2 {
+  grid-area: content;
+}
+.lesson14 .container14-1 .item3 {
+  grid-area: sidebar-2;
+}
+@media (max-width: 700px) {
+  .lesson14 .container14-1 {
+    grid-template-areas:
+      "content    content     content"
+      "sidebar-1  sidebar-1   sidebar-2"
+      "footer     footer      footer"
+  }
+}
+.lesson14 .container14-2 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "💩 💩 💩 💩 🍔 🍔 🍔 🍔"
+    "💩 💩 💩 💩 🍔 🍔 🍔 🍔"
+    "💩 💩 💩 💩 🍔 🍔 🍔 🍔"
+    "💩 💩 💩 💩 🍔 🍔 🍔 🍔";
+}
+.lesson14 .container14-1 .item3 {
+  grid-column: 💩-start / 🍔-end;
+  grid-row-end: 💩-end;
+}
+
+.lesson15 .container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: [sidebar-start site-left] 1fr [sidebar-end content-start] 500px [content-end] 1fr [site-right];
+  grid-template-rows: [content-top] repeat(10, auto) [content-bottom];
+}
+.lesson15 .item3 {
+  background: slateblue;
+  grid-column: content-start;
+  grid-row: content-top / content-bottom;
+  /* grid-row: 1 / span 10; */
+}
+
+.lesson16 .container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(10, 1fr);
+  grid-auto-flow: dense;
+}
+.lesson16 .item:nth-child(6n) {
+  background: cornflowerblue;
+  grid-column: span 6;
+}
+.lesson16 .item:nth-child(8n) {
+  background: tomato;
+  grid-column: span 2;
+}
+.lesson16 .item:nth-child(9n) {
+  grid-row: span 2;
+}
+.lesson16 .item18 {
+  background: greenyellow !important;
+  grid-column-end: -1 !important;
+}
+
+ /*
+      justify-items:
+      align-items:
+      justify-content:
+      align-content:
+      align-self:
+      justify-self:
+      justify-* is row axis
+      align-* is column axis
+    */
+.lesson17 .container {
+  display: grid;
+  grid-gap: 20px;
+  height: 500px;
+  border: 10px solid var(--yellow);
+  grid-template-columns: repeat(5, 130px);
+  /* justify-items: center;
+  align-items: center; */
+  place-items: stretch stretch;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.lesson17 .itm {
+  background: white;
+}
+.lesson17 .itm5 {
+  justify-self: center;
+  align-self: center;
 }
