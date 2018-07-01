@@ -1,9 +1,47 @@
-p {
+h1 {
   font-size: 50px;
   border-bottom: 10px solid var(--yellow);
   color: var(--black);
 }
 
-.container1 p {
-  color: red;
+.lesson2 p {
+  font-size: 50px;
+  border-bottom: 10px solid var(--yellow);
+  color: var(--black);
+}
+
+.lesson3 .container3-1 {
+  display: grid;
+  /* grid-template-columns: 100px 100px 100px; */
+  grid-template-columns: 200px 500px auto 50px;
+  grid-gap: 20px;
+}
+
+.lesson3 .container3-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 100px 50px);
+  grid-gap: 20px;
+}
+
+.lesson3 .container {
+  display: grid;
+  grid-template-columns: 200px 500px;
+  grid-template-rows: 200px 100px 400px;
+  grid-gap: 20px;
+}
+.lesson5 .container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 200px 400px;
+  grid-template-rows: 50px 100px;
+  grid-auto-rows: 100px;
+  grid-auto-columns: 100px;
+}
+
+.lesson6 .container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 400px 200px;
+  grid-auto-flow: column;
+  grid-auto-columns: 200px;
 }
