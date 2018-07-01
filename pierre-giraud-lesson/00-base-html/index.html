@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Premiere page HTML</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <span id="haut-de-france"></span>
+    <!--Voila un commentaire il ne sera pas affiché-->
+    <h1>Titre et paragraph</h1>
+    <h1>Je viens d'écrire un titre en HTML</h1>
+    <p>Et voila mon premier paragraphe</p>
+
+    <h1>Mon titre principal</h1>
+    <h2>Titre important</h2>
+    <h3>Titre d'importance moyenne</h3>
+
+    <h4>Titre pas tres important</h4>
+    <h5>Titre peu important</h5>
+    <h6>Titre vraiment peu important</h6>
+
+    <p>Voici un paragraph.</p>
+    <p>Voici un deuxième paragraph.</p>
+
+    <p>
+        Voila
+        <br/> un
+        <br/> paragraph
+        <br/> avec
+        <br/> des
+        <br/> retours
+        <br/> a la ligne.</p>
+    <hr/>
+    <p>et voici une barre horizontal pour séparer 2 paragraph</p>
+
+    <pre>
+        ici     la  mise    en  page    sera    conservé.
+    </pre>
+    <h1>Mise en valeur</h1>
+    <p>
+        Voila un paragraph avec une
+        <strong>mise en valeur</strong>
+        et une
+        <em>petite mise en valeur</em>
+        <br/>Par deffaut
+        <pre><strong></pre> va mettre en gras et
+        <pre><em></pre> en italique
+        <br/>mais ne pas l'utiliser pour ca, nous verrons comment le faire plus tard,
+        <br/>ces balises sont vraiment pour mettre en valeur et non pour mettre en forme
+        <br>
+        <pre><mark></pre> permet de faire faire ressortir un element
+    </p>
+
+    <h1>Liste</h1>
+
+    Liste de fruit non ordonnée
+    <ul>
+        <li>Pomme</li>
+        <li>Poire</li>
+        <li>Aubergine</li>
+    </ul>
+    Liste de fruit ordonnée
+    <ol>
+        <li>Pomme</li>
+        <li>Poire</li>
+        <li>Aubergine</li>
+    </ol>
+    Liste de fruit ordonnée
+    <ol type="A">
+        <li>Pomme</li>
+        <li>Poire</li>
+        <li>Aubergine</li>
+    </ol>
+    Liste de fruit ordonnée
+    <ol type="a">
+        <li>Pomme</li>
+        <li>Poire</li>
+        <li>Aubergine</li>
+    </ol>
+    Liste de fruit ordonnée
+    <ol type="i">
+        <li>Pomme</li>
+        <li>Poire</li>
+        <li>Aubergine</li>
+    </ol>
+    Liste de fruit ordonnée
+    <ol type="I">
+        <li>Pomme</li>
+        <li>Poire</li>
+        <li>Aubergine</li>
+    </ol>
+
+    Définission
+    <dl>
+        <dt>HTML</dt>
+        <dd>HTML signifie HyperText Markup Language</dd>
+    </dl>
+
+    Liste imbriqué
+    <ol type="I">
+        <li>Pomme</li>
+        <li>Poire</li>
+        <li>
+            <ol type="I">
+                <li>Pomme</li>
+                <li>Poire</li>
+                <li>Aubergine</li>
+            </ol>
+        </li>
+    </ol>
+
+    <h1>Liens</h1>
+    Pour créer des liens internes, il faut donc distinguer trois cas :
+    <ol>
+        <li>Le cas où la page de départ et celle de destination sont dans le même dossier ;</li>
+        <li>Le cas où la page de destination est dans un sous-dossier par rapport à la page de départ ;</li>
+        <li>Le cas où la page de destination est dans un dossier parent par rapport à la page de départ.</li>
+    </ol>
+
+    <br/>
+    <a href="./target-link.html">lien vers la page</a>
+    <br/>
+    <pre><a href="./target-link.html">lien vers la page</a></pre>
+    <br/>pour un sous dossier
+    <pre>href="./sous-dossier/target-link.html"</pre>
+    <br/>pour un dossier parent
+    <pre>href="../target-link.html"</pre>
+
+    <p>
+        on peut aussi creer des ancres
+        <pre><span id="haut-de-france"></span></pre> un lien pourra y référer
+        <pre>href="#haut-de-france"</pre>
+        <a href="#haut-de-france">tester ici</a>
+    </p>
+
+    <p>
+        <a href="mailto:pierre.giraud@edhec.com">pour envoyer un mail</a>
+        <pre>
+                <a href="mailto:pierre.giraud@edhec.com">pour envoyer un mail</a>
+        </pre>
+    </p>
+
+    <p>
+        Telecharger
+        <pre><a href="fichier-to-dwl.pdf" download></a></pre>
+    </p>
+
+    <h1>Les images</h1>
+
+    flemme
+
+    <h1>Validation</h1>
+    <br/>Validation html: http://validator.w3.org/
+    <br/>Validation css: http://jigsaw.w3.org/css-validator/
+</body>
+
+</html>
