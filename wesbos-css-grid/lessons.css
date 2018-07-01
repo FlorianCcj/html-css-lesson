@@ -1,0 +1,9 @@
+p {
+  font-size: 50px;
+  border-bottom: 10px solid var(--yellow);
+  color: var(--black);
+}
+
+.container1 p {
+  color: red;
+}
