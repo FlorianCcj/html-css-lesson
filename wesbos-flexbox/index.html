@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./lessons.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <title>Flexbox</title>
+</head>
+
+<body>
+  .container>.box.box${$}*10
+  <nav id="summary">
+    <a href="./index.html#summary">summary</a>
+    <a href="./index.html#lesson2">lesson2</a>
+    <a href="./index.html#lesson3">lesson3</a>
+    <a href="./index.html#lesson4">lesson4</a>
+    <a href="./index.html#lesson5">lesson5</a>
+    <a href="./index.html#lesson6">lesson6</a>
+    <a href="./index.html#lesson7">lesson7</a>
+    <a href="./index.html#lesson8">lesson8</a>
+    <a href="./index.html#lesson9">lesson9</a>
+    <a href="./index.html#lesson10">lesson10</a>
+    <a href="./index.html#lesson11">lesson11</a>
+    <a href="./index.html#lesson12">lesson12</a>
+    <a href="./index.html#lesson13">lesson13</a>
+    <a href="./index.html#lesson14">lesson14</a>
+    <a href="./index.html#lesson15">lesson15</a>
+    <a href="./index.html#lesson16">lesson16</a>
+    <a href="./index.html#lesson17">lesson17</a>
+    <a href="./index.html#lesson18">lesson18</a>
+    <a href="./index.html#lesson19">lesson19</a>
+    <a href="./index.html#lesson20">lesson20</a>
+  </nav>
+  <div class="lesson lesson2" id="lesson2">
+    <a href="./index.html#summary">summary</a>
+    <h1>Introduction</h1>
+    100vh : 100% browser view
+    <div class="container">
+      <div class="box box1">1</div>
+      <div class="box box2">2</div>
+      <div class="box box3">3</div>
+      <div class="box box4">4</div>
+      <div class="box box5">5</div>
+      <div class="box box6">6</div>
+      <div class="box box7">7</div>
+      <div class="box box8">8</div>
+      <div class="box box9">9</div>
+      <div class="box box10">10</div>
+    </div>
+  </div>
+  <hr/>
+  <hr/>
+  <div class="lesson lesson3" id="lesson3">
+    <a href="./index.html#summary">summary</a>
+    todo:
+    <h1>flex-direction</h1>
+    main axis: default row from left to right cross axis flex-direction value: row (default), column, row-reverse, column-reverse
+    <div class="container">
+      <div class="box box1">1</div>
+      <div class="box box2">2</div>
+      <div class="box box3">3</div>
+      <div class="box box4">4</div>
+      <div class="box box5">5</div>
+      <div class="box box6">6</div>
+      <div class="box box7">7</div>
+      <div class="box box8">8</div>
+      <div class="box box9">9</div>
+      <div class="box box10">10</div>
+    </div>
+  </div>
+  <hr/>
+  <hr/>
+  <div class="lesson lesson4" id="lesson4">
+    <a href="./index.html#summary">summary</a>
+    <h1>Wrapping element</h1>
+    flex-wrap: permit to tell, if eof, go next lign value: nowrap (default), wrap, wrap-reverse
+    <div class="container">
+      <div class="box box1">1</div>
+      <div class="box box2">2</div>
+      <div class="box box3">3</div>
+      <div class="box box4">4</div>
+      <div class="box box5">5</div>
+      <div class="box box6">6</div>
+      <div class="box box7">7</div>
+      <div class="box box8">8</div>
+      <div class="box box9">9</div>
+      <div class="box box10">10</div>
+    </div>
+  </div>
+  <hr/>
+  <hr/>
+  <div class="lesson lesson5" id="lesson5">
+    <a href="./index.html#summary">summary</a>
+    <h1>Ordering</h1>
+    it's a height ... minus-order is a the left the more heavy is at the right
+    <div class="container">
+      <div class="box box1">1</div>
+      <div class="box box2">2</div>
+      <div class="box box3">3</div>
+      <div class="box box4">4</div>
+      <div class="box box5">5</div>
+      <div class="box box6">6</div>
+      <div class="box box7">7</div>
+      <div class="box box8">8</div>
+      <div class="box box9">9</div>
+      <div class="box box10">10</div>
+    </div>
+  </div>
+  <hr/>
+  <hr/>
+  <div class="lesson lesson6" id="lesson6">
+    <a href="./index.html#summary">summary</a>
+    todo+css:
+    <h1>Alignment and centering with justify-content</h1>
+    justify-content: where to place items
+    <br/> value: flex-start, flex-end, center
+    <div class="container-center">
+      <div class="box box1">1</div>
+      <div class="box box2">2</div>
+      <div class="box box3">3</div>
+      <div class="box box4">4</div>
+      <div class="box box5">5</div>
+      <div class="box box6">6</div>
+      <div class="box box7">7</div>
+      <div class="box box8">8</div>
+      <div class="box box9">9</div>
+      <div class="box box10">10</div>
+    </div>
+    <div class="container-end">
+      <div class="box box1">1</div>
+      <div class="box box2">2</div>
+      <div class="box box3">3</div>
+      <div class="box box4">4</div>
+      <div class="box box5">5</div>
+      <div class="box box6">6</div>
+      <div class="box box7">7</div>
+      <div class="box box8">8</div>
+      <div class="box box9">9</div>
+      <div class="box box10">10</div>
+    </div>
+    <div class="container-between">
+      <div class="box box1">1</div>
+      <div class="box box2">2</div>
+      <div class="box box3">3</div>
+      <div class="box box4">4</div>
+      <div class="box box5">5</div>
+      <div class="box box6">6</div>
+      <div class="box box7">7</div>
+      <div class="box box8">8</div>
+      <div class="box box9">9</div>
+      <div class="box box10">10</div>
+    </div>
+    <div class="container-around">
+      <div class="box box1">1</div>
+      <div class="box box2">2</div>
+      <div class="box box3">3</div>
+      <div class="box box4">4</div>
+      <div class="box box5">5</div>
+      <div class="box box6">6</div>
+      <div class="box box7">7</div>
+      <div class="box box8">8</div>
+      <div class="box box9">9</div>
+      <div class="box box10">10</div>
+    </div>
+  </div>
+  <hr/>
+  <hr/>
+  <div class="lesson lesson7" id="lesson7">
+    <a href="./index.html#summary">summary</a>
+    <h1>Alignment and centering with align-items</h1>
+    align-item: same as justify-content but on cross axis value: baseline (whatever the size of items, text is align)
+    <div class="container">
+      <div class="box box1">1</div>
+      <div class="box box2">2</div>
+      <div class="box box3">3</div>
+      <div class="box box4">4</div>
+      <div class="box box5">5</div>
+      <div class="box box6">6</div>
+      <div class="box box7">7</div>
+      <div class="box box8">8</div>
+      <div class="box box9">9</div>
+      <div class="box box10">10</div>
+    </div>
+  </div>
+  <hr/>
+  <hr/>
+  <div class="lesson lesson8" id="lesson8">
+    <a href="./index.html#summary">summary</a>
+    todo+css:
+    <h1>Alignment and centering with align-content</h1>
+    <div class="container">
+      <div class="box box1">1</div>
+      <div class="box box2">2</div>
+      <div class="box box3">3</div>
+      <div class="box box4">4</div>
+      <div class="box box5">5</div>
+      <div class="box box6">6</div>
+      <div class="box box7">7</div>
+      <div class="box box8">8</div>
+      <div class="box box9">9</div>
+      <div class="box box10">10</div>
+    </div>
+  </div>
+  <hr/>
+  <hr/>
+  <div class="lesson lesson9" id="lesson9">
+    <a href="./index.html#summary">summary</a>
+    todo+css:
+    <h1>Alignment and centering with align-self</h1>
+    <div class="container">
+      <div class="box box1">1</div>
+      <div class="box box2">2</div>
+      <div class="box box3">3</div>
+      <div class="box box4">4</div>
+      <div class="box box5">5</div>
+      <div class="box box6">6</div>
+      <div class="box box7">7</div>
+      <div class="box box8">8</div>
+      <div class="box box9">9</div>
+      <div class="box box10">10</div>
+    </div>
+  </div>
+  <hr/>
+  <hr/>
+  <div class="lesson lesson10" id="lesson10">
+    <a href="./index.html#summary">summary</a>
+    <h1>understanding flexbox sizing with flex property </h1>
+    <br/> flex: 1; take the exact space of the content
+    <br/> flex: 2; take twice the place ... if theree is space
+    <div class="container">
+      <div class="box box1">one</div>
+      <div class="box box2">two</div>
+      <div class="box box3">three</div>
+      <div class="box box4">four</div>
+      <div class="box box5">five</div>
+      <div class="box box6">six</div>
+    </div>
+  </div>
+  <hr/>
+  <hr/>
+  <div class="lesson lesson11" id="lesson11">
+    <a href="./index.html#summary">summary</a>
+    <h1>understanding flexbox flex-grow flex-shrink and flex-basis</h1>
+    <br/>flex grow: when we have free extra space how do divide id
+    <br/>flex:
+    <br/>flex-shrink
+    <br/>flex-basis
+    <br/>
+    <div class="container container-grow">
+      <div class="box box1">one</div>
+      <div class="box box2">two</div>
+    </div>
+    <div class="container container-custom">
+      <div class="box box1">one</div>
+      <div class="box box2">two</div>
+    </div>
+  </div>
+  <hr/>
+  <hr/>
+  <div class="lesson lesson12" id="lesson12">
+    <a href="./index.html#summary">summary</a>
+    todo+css:
+    <h1>flex-basis and wrapping together</h1>
+    <div class="container">
+      <div class="box box1">one</div>
+      <div class="box box2">two</div>
+      <div class="box box3">three</div>
+      <div class="box box4">four</div>
+      <div class="box box5">five</div>
+      <div class="box box6">six</div>
+    </div>
+    <hr/>
+    <div class="container container-column">
+      <div class="box box1">one</div>
+      <div class="box box2">two</div>
+      <div class="box box3">three</div>
+      <div class="box box4">four</div>
+      <div class="box box5">five</div>
+      <div class="box box6">six</div>
+    </div>
+  </div>
+  <hr/>
+  <hr/>
+  <div class="lesson lesson13" id="lesson13">
+    <a href="./index.html#summary">summary</a>
+    todo+css:
+    <h1>cross browser and autoprefixer</h1>
+    gulpfile.js ... tried ... and useless now ^^
+  </div>
+  <hr/>
+  <hr/>
+  <div class="lesson lesson14" id="lesson14">
+    <a href="./index.html#summary">summary</a>
+    todo:
+    <h1>Pure flexbox navigation code along</h1>
+    <div class="wrapper">
+      <nav class="flex-nav">
+        <ul>
+          <li>
+            <a href="#">Item 01</a>
+          </li>
+          <li>
+            <a href="#">Item 02</a>
+          </li>
+          <li>
+            <a href="#">Item 03</a>
+          </li>
+          <li>
+            <a href="#">Item 04</a>
+          </li>
+          <li>
+            <a href="#">Item 05</a>
+          </li>
+          <li>
+            <a href="#">Item 06</a>
+          </li>
+          <li class="social">
+            <a href="http://twitter.com/wesbos">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li class="social">
+            <a href="http://facebook.com/wesbos.developer">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li class="social">
+            <a href="http://github.com/wesbos">
+              <i class="fa fa-github"></i>
+            </a>
+          </li>
+          <li class="social">
+            <a href="http://instagram.com/wesbos">
+              <i class="fa fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </div>
+  <hr/>
+  <hr/>
+  <div class="lesson lesson15" id="lesson15">
+    <a href="./index.html#summary">summary</a>
+    <h1>mobile content reordering</h1>
+  </div>
+  <hr/>
+  <hr/>
+  <div class="lesson lesson16" id="lesson16">
+    <a href="./index.html#summary">summary</a>
+    todo:
+    <h1>Nesting flexbox for vertical and horizontal centering</h1>
+    ul
+    li a span ... span a li
+    li a span ... span a li
+    li a span ... span a li
+    li a span ... span a li
+    ul
+
+    ul {display: flex;}
+    li {flex:1; display: flex; text-align: center;}
+    li.arr:first-child, :last-child {}
+    li.arrow {flex: 1;}
+    .arrow a {font-size: 30px;}
+    a {flex-basis: 100%; display: flex; align-items: center;}
+    span {display: block; width: 100%;}
+  </div>
+  <hr/>
+  <hr/>
+  <div class="lesson lesson17" id="lesson17">
+    <a href="./index.html#summary">summary</a>
+    todo:
+    <h1>Pricing grid</h1>
+    <div class="container">
+      <div class="box box1">1</div>
+      <div class="box box2">2</div>
+      <div class="box box3">3</div>
+      <div class="box box4">4</div>
+      <div class="box box5">5</div>
+      <div class="box box6">6</div>
+      <div class="box box7">7</div>
+      <div class="box box8">8</div>
+      <div class="box box9">9</div>
+      <div class="box box10">10</div>
+    </div>
+  </div>
+  <hr/>
+  <hr/>
+  <div class="lesson lesson18" id="lesson18">
+    <a href="./index.html#summary">summary</a>
+    todo:
+    <h1>egal height columns and leftover elements</h1>
+    <div class="container">
+      <div class="box box1">1</div>
+      <div class="box box2">2</div>
+      <div class="box box3">3</div>
+      <div class="box box4">4</div>
+      <div class="box box5">5</div>
+      <div class="box box6">6</div>
+      <div class="box box7">7</div>
+      <div class="box box8">8</div>
+      <div class="box box9">9</div>
+      <div class="box box10">10</div>
+    </div>
+  </div>
+  <hr/>
+  <hr/>
+  <div class="lesson lesson19" id="lesson19">
+    <a href="./index.html#summary">summary</a>
+    todo:
+    <h1>single line form</h1>
+    <div class="container">
+      <div class="box box1">1</div>
+      <div class="box box2">2</div>
+      <div class="box box3">3</div>
+      <div class="box box4">4</div>
+      <div class="box box5">5</div>
+      <div class="box box6">6</div>
+      <div class="box box7">7</div>
+      <div class="box box8">8</div>
+      <div class="box box9">9</div>
+      <div class="box box10">10</div>
+    </div>
+  </div>
+  <hr/>
+  <hr/>
+  <div class="lesson lesson20" id="lesson20">
+    <a href="./index.html#summary">summary</a>
+    todo:
+    <h1>mobile app layout</h1>
+  </div>
+</body>
+
+</html>

@@ -26,6 +26,10 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 .box9 { background:#2ecc71;}
 .box10 { background:#16a085;}
 
+.container {
+  display: flex;
+}
+
 /* We start writing out flexbox here. The above is just page setup */
 .lesson2 .container {
   display:flex;
@@ -39,9 +43,17 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
   display:flex;
   border:10px solid goldenrod;
   min-height:100vh;
+  flex-direction: column; /*step 1*/
+}
+
+/* We start writing out flexbox here. The above is just page setup */
+.lesson4 .container {
+  display:flex;
+  border:10px solid goldenrod;
+  min-height:100vh;
   flex-wrap:wrap;
 }
-.lesson3 .box {
+.lesson4 .box {
   width:33.3333333%;
 }
 
@@ -57,4 +69,122 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 }
 .lesson5 .box5 {
   order:2;
+}
+
+.lesson6 .container-end {
+  display: flex;
+  justify-content: flex-end;
+}
+.lesson6 .container-center {
+  display: flex;
+  justify-content: center;
+}
+.lesson6 .container-between {
+  display: flex;
+  justify-content: space-between;
+}
+.lesson6 .container-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.lesson10 .container {
+  display: flex;
+}
+.lesson10 .box {
+  flex: 1;
+}
+.lesson10 .box2 {
+  flex: 2;
+}
+.lesson10 .box5 {
+  flex: 3;
+}
+
+.lesson11 .container-grow .box {
+  flex-grow: 1;
+}
+.lesson11 .container-custom .box1 {
+  flex-basis: 400px;
+  flex-grow: 1;
+}
+.lesson11 .container-custom .box2 {
+  flex-basis: 400px;
+}
+
+.lesson12 .container {
+  flex-wrap: wrap;
+}
+.lesson12 .container .box {
+  flex-basis: 500px;
+  flex-grow: 1;
+}
+.lesson12 .container .box3 {
+  flex-basis: 500px;
+  flex-grow: 10;
+}
+.lesson12 .container-column {
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100vh;
+}
+.lesson12 .container-column .box {
+  flex-basis: 250px;
+  flex-grow: 1;
+}
+.lesson12 .container-column .box3 {
+  flex-grow: 10 5 400px;
+}
+.lesson12 .container-column .box4 {
+  flex-basis: 100px;
+}
+
+.lesson14 a {
+  color:white;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-decoration: none;
+  background:rgba(0,0,0,0.2);
+  padding:20px 5px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  transition:all 0.5s;
+}
+.lesson14 a:hover {
+  background:rgba(0,0,0,0.3);
+}
+.lesson14 .wrapper {
+  min-width: 1000px;
+  margin: 0 auto;
+  padding: 50px;
+}
+.lesson14 .flex-nav ul {
+  border: 1px solid black;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.lesson14 .flex-nav li {
+  flex: 3;
+}
+.lesson14 .flex-nav .social {
+  flex: 1;
+}
+@media all and (max-width: 1000px) {
+  .lesson14 .flex-nav ul {
+    flex-wrap: wrap;
+  }
+  .lesson14 .flex-nav li {
+    flex: 1 1 50%;
+  }
+  .lesson14 .flex-nav .social {
+    flex: 1 1 25%;
+  }
+}
+@media all and (max-width: 500px) {
+  .lesson14 .flex-nav li {
+    flex-basis: 100%;
+  }
 }

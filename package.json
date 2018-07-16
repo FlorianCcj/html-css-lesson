@@ -7,7 +7,9 @@
     "start": "run-script-os",
     "start:win32": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777 --browser \"C:\\Program Files\\Firefox Developer Edition\\firefox.exe\"",
     "//": "Hello! If you are having trouble running this command. Try changing Firefox Developer Edition to FirefoxDeveloperEdition",
-    "start:darwin:linux": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777 --browser 'Firefox Developer Edition'"
+    "start:darwin:linux": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777 --browser 'Firefox Developer Edition'",
+    "build:flexbox:styles": "gulp build-flex",
+    "build:flexbox:watch": "gulp watch" 
   },
   "devDependencies": {
     "browser-sync": "^2.24.5",
@@ -22,5 +24,9 @@
   "bugs": {
     "url": "https://github.com/FlorianCcj/html-css-lesson/issues"
   },
-  "homepage": "https://github.com/FlorianCcj/html-css-lesson#readme"
+  "homepage": "https://github.com/FlorianCcj/html-css-lesson#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0"
+  }
 }
