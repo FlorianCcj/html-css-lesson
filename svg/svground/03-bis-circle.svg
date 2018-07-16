@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg width="400px" height="300px" xml:lang="fr" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>
+		Des cercles d’opacités différentes
+	</title>
+	<circle cx="200" cy="100" r="90" style="stroke:black;stroke-width:1px;fill:magenta;fill-opacity:0.6;" />
+	<circle cx="140" cy="200" r="90" style="stroke:black;stroke-width:1px;fill:cyan;fill-opacity:0.6;" />
+	<circle cx="260" cy="200" r="90" style="stroke:black;stroke-width:1px;fill:yellow;fill-opacity:0.4;" />
+</svg>
